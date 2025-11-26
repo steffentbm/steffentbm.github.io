@@ -2,7 +2,8 @@
     /* Colors - Light Mode */
     --bg-color: #ffffff;
     --text-color: #1a1a1a;
-    --accent-color: #3b82f6; /* A nice modern blue */
+    --accent-color: #3b82f6;
+    /* A nice modern blue */
     --secondary-text: #666666;
     --border-color: #e5e5e5;
     --card-bg: #f9fafb;
@@ -92,13 +93,19 @@ a:hover {
     background-color: var(--card-hover);
 }
 
-.icon-sun, .icon-moon {
+.icon-sun,
+.icon-moon {
     display: none;
 }
 
 /* Logic to show correct icon based on theme */
-[data-theme="dark"] .icon-sun { display: block; }
-:not([data-theme="dark"]) .icon-moon { display: block; }
+[data-theme="dark"] .icon-sun {
+    display: block;
+}
+
+html:not([data-theme="dark"]) .icon-moon {
+    display: block;
+}
 
 /* Main Content */
 #main-content {
@@ -115,7 +122,8 @@ a:hover {
     padding: 2rem;
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    background-color: var(--card-bg); /* Optional: subtle bg for cards */
+    background-color: var(--card-bg);
+    /* Optional: subtle bg for cards */
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     cursor: pointer;
 }
@@ -155,8 +163,15 @@ a:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .back-button {
@@ -221,7 +236,7 @@ a:hover {
     .post-header h1 {
         font-size: 2rem;
     }
-    
+
     .post-card {
         padding: 1.5rem;
     }
