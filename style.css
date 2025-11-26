@@ -1,21 +1,4 @@
 :root {
-    /* Colors - Light Mode */
-    --bg-color: #ffffff;
-    --text-color: #1a1a1a;
-    --accent-color: #3b82f6;
-    /* A nice modern blue */
-    --secondary-text: #666666;
-    --border-color: #e5e5e5;
-    --card-bg: #f9fafb;
-    --card-hover: #f3f4f6;
-
-    /* Typography */
-    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-    --max-width: 800px;
-    --header-height: 80px;
-}
-
-[data-theme="dark"] {
     /* Colors - Dark Mode */
     --bg-color: #0f172a;
     --text-color: #e2e8f0;
@@ -24,6 +7,22 @@
     --border-color: #1e293b;
     --card-bg: #1e293b;
     --card-hover: #334155;
+
+    /* Typography */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --max-width: 800px;
+    --header-height: 80px;
+}
+
+[data-theme="light"] {
+    /* Colors - Light Mode */
+    --bg-color: #ffffff;
+    --text-color: #1a1a1a;
+    --accent-color: #3b82f6;
+    --secondary-text: #666666;
+    --border-color: #e5e5e5;
+    --card-bg: #f9fafb;
+    --card-hover: #f3f4f6;
 }
 
 * {
@@ -99,11 +98,11 @@ a:hover {
 }
 
 /* Logic to show correct icon based on theme */
-[data-theme="dark"] .icon-sun {
+[data-theme="light"] .icon-moon {
     display: block;
 }
 
-html:not([data-theme="dark"]) .icon-moon {
+html:not([data-theme="light"]) .icon-sun {
     display: block;
 }
 
