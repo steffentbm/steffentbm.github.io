@@ -1,9 +1,9 @@
 [
     {
-        "id": "welcome",
-        "title": "Welcome to My New Blog",
+        "id": "velkommen",
+        "title": "Velkommen!",
         "date": "2025-11-26",
-        "file": "welcome.html",
-        "excerpt": "This is the very first post on my new minimalist blog. Built with pure HTML, CSS, and JavaScript."
+        "file": "velkommen.html",
+        "excerpt": "Dette er den første posten."
     }
 ]
